@@ -1,7 +1,8 @@
+<template>
+  <td>2</td>
+</template>
+
+
 <script>
-export default {
-  render(h) {
-    return h("div");
-  }
-};
+export default {};
 </script>
