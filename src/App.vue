@@ -1,8 +1,20 @@
 <template>
   <div id="app">
     <Grid v-bind="{ items }">
-      <GridHeaders slot="headers" slot-scope="{ bindings, events }" v-bind="bindings" v-on="events"></GridHeaders>
-      <GridColumns slot="columns" slot-scope="{ bindings, events }" v-bind="bindings" v-on="events"></GridColumns>
+      <GridHeaders slot="headers" slot-scope="{ bindings, events }" v-bind="bindings" v-on="events">
+        <template slot-scope="{}">
+          <th>2</th>
+          <th>3</th>
+          <th>4</th>
+        </template>
+      </GridHeaders>
+      <GridColumns slot="columns" slot-scope="{ bindings, events }" v-bind="bindings" v-on="events">
+        <template slot-scope="{}">
+          <td>2</td>
+          <td>3</td>
+          <td>4</td>
+        </template>
+      </GridColumns>
     </Grid>
   </div>
 </template>

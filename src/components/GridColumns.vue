@@ -1,8 +1,7 @@
-<template>
-  <td>2</td>
-</template>
-
-
 <script>
-export default {};
+export default {
+  render() {
+    return <fragment>{this.$scopedSlots.default({})}</fragment>;
+  }
+};
 </script>
