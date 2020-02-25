@@ -6,8 +6,9 @@ export default {
 
   render(h) {
     const headers = this.$scopedSlots.headers({});
-    const columns = this.$scopedSlots.columns({});
-    const rows = this.items.map(row => <tr>{columns}</tr>);
+    const rows = this.items.map(item => (
+      <tr>{this.$scopedSlots.columns({ item })}</tr>
+    ));
 
     return (
       <table>

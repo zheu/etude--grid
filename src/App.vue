@@ -3,17 +3,22 @@
     <Grid v-bind="{ items }">
       <GridHeaders slot="headers" slot-scope="{ bindings, events }" v-bind="bindings" v-on="events">
         <template slot-scope="{}">
-          <th>2</th>
-          <th>3</th>
-          <th>4</th>
+          <th>name</th>
+          <th>phone</th>
+          <th>mail</th>
+          <th>profession</th>
         </template>
       </GridHeaders>
-      <GridColumns slot="columns" slot-scope="{ bindings, events }" v-bind="bindings" v-on="events">
-        <template slot-scope="{}">
-          <td>2</td>
-          <td>3</td>
-          <td>4</td>
-        </template>
+      <GridColumns
+        slot="columns"
+        slot-scope="{ bindings, events, item }"
+        v-bind="bindings"
+        v-on="events"
+      >
+        <td>{{ item.name }}</td>
+        <td>{{ item.phone }}</td>
+        <td>{{ item.mail }}</td>
+        <td>{{ item.profession }}</td>
       </GridColumns>
     </Grid>
   </div>
@@ -24,12 +29,13 @@ import Grid from "./components/Grid";
 import GridColumns from "./components/GridColumns";
 import GridRows from "./components/GridRows";
 import GridHeaders from "./components/GridHeaders";
+import items from "../data/items";
 
 export default {
   name: "App",
   components: { Grid, GridColumns, GridHeaders, GridRows },
   data: () => ({
-    items: [1, 2, 3, 4, 5]
+    items
   })
 };
 </script>
