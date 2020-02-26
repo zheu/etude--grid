@@ -13,6 +13,7 @@
     "@vue/babel-helper-vue-jsx-merge-props": "1.0.0",
     "@vue/babel-plugin-transform-vue-jsx": "1.1.2",
     "@vue/cli-plugin-babel": "4.1.1",
+    "babel-plugin-syntax-jsx": "^6.18.0",
     "babel-plugin-transform-vue-jsx": "3.7.0",
     "vue": "^2.6.11",
     "vue-fragment": "1.5.1"
