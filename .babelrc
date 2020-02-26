@@ -1,7 +1,6 @@
 {
   "presets": [
-    "@vue/app",
-    "env"
+    "@vue/app"
   ],
   "plugins": [
     "transform-vue-jsx"
