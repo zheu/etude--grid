@@ -4,7 +4,7 @@ export default {
     items: Array
   },
 
-  render(h) {
+  render() {
     const headers = this.$scopedSlots.headers({});
     const rows = this.items.map(item => (
       <tr>{this.$scopedSlots.columns({ item })}</tr>

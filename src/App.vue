@@ -27,13 +27,12 @@
 <script>
 import Grid from "./components/Grid";
 import GridColumns from "./components/GridColumns";
-import GridRows from "./components/GridRows";
 import GridHeaders from "./components/GridHeaders";
 import items from "../data/items";
 
 export default {
   name: "App",
-  components: { Grid, GridColumns, GridHeaders, GridRows },
+  components: { Grid, GridColumns, GridHeaders },
   data: () => ({
     items
   })

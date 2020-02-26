@@ -1,6 +1,11 @@
 {
   "presets": [
-    "@vue/app"
+    [
+      "@vue/babel-preset-jsx",
+      {
+        "injectH": false
+      }
+    ]
   ],
   "plugins": [
     "transform-vue-jsx"
