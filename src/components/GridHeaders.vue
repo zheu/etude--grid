@@ -1,6 +1,6 @@
 <script>
 export default {
-  render() {
+  render(h) {
     return <tr>{this.$scopedSlots.default({})}</tr>;
   }
 };
